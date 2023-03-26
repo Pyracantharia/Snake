@@ -17,6 +17,7 @@
 <div>
     <h1>Snake Game</h1>
     <button id="start">Start</button>
+    <button id="restart">Restart</button>
     <h2>Score: <span id="score">0</span></h2>
     <canvas class="area-game" id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
 </div>
@@ -199,6 +200,15 @@ document.getElementById("start").addEventListener("click", function() {
 // this is the function to change the direction
 
 document.addEventListener("keydown", changeDirection);
+
+
+// restart the game when the user click on the button Restart
+
+document.getElementById("restart").addEventListener("click", function() {
+    location.reload();
+});
+
+
 
 
 
